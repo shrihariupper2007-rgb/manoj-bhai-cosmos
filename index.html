@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050507">
+  <meta name="description" content="A little cosmic detour. Find Manoj bhai somewhere among the stars.">
+  <title>Somewhere in the Cosmos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <canvas class="sky-canvas" id="sky-canvas" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <main class="experience" id="experience" data-scene="galaxy">
+    <header class="topbar">
+      <a class="wordmark" href="#" aria-label="Somewhere in the Cosmos, home">
+        <span class="wordmark-icon" aria-hidden="true">✳</span>
+        <span>ODD HOURS <span class="wordmark-divider">/</span> COSMIC VISITORS</span>
+      </a>
+      <button class="sound-button" id="sound-toggle" type="button" aria-pressed="false">
+        <span class="sound-icon" aria-hidden="true">♫</span>
+        <span class="sound-label">SOUND OFF</span>
+      </button>
+    </header>
+
+    <section class="scene scene-galaxy" aria-labelledby="scene-title">
+      <div class="scene-copy">
+        <p class="eyebrow"><span class="status-dot"></span><span id="scene-kicker">A transmission from somewhere</span></p>
+        <h1 id="scene-title">The universe is<br><span>almost</span> in reach.</h1>
+        <p class="scene-description" id="scene-description">A familiar face is drifting through this little corner of the cosmos.</p>
+      </div>
+
+      <div class="cosmos">
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="orbit orbit-three" aria-hidden="true"></div>
+        <div class="planet planet-back" aria-hidden="true"></div>
+        <div class="planet planet-front" aria-hidden="true"></div>
+        <button class="person-orb" id="person-orb" type="button" aria-label="Visit Manoj bhai">
+          <span class="orb-glow" aria-hidden="true"></span>
+          <span class="orb-content">
+            <span class="orb-asterisk" aria-hidden="true">✳</span>
+            <span class="orb-name">MANOJ<br>BHAI</span>
+            <span class="orb-action" id="orb-action">MAKE CONTACT <span aria-hidden="true">↗</span></span>
+          </span>
+        </button>
+        <span class="orbit-label label-one" aria-hidden="true">LOCAL TIME: WHO KNOWS</span>
+        <span class="orbit-label label-two" aria-hidden="true">DISTANCE: A CLICK AWAY</span>
+        <span class="cosmos-cross cross-one" aria-hidden="true">✳</span>
+        <span class="cosmos-cross cross-two" aria-hidden="true">✳</span>
+      </div>
+
+      <div class="scene-bottom">
+        <span class="coordinates" id="scene-hint">TAP THE ORB TO BEGIN</span>
+        <span class="scroll-note"><span class="scroll-line"></span> A VERY SHORT JOURNEY</span>
+      </div>
+    </section>
+
+    <section class="scene scene-fire" aria-labelledby="fire-title" aria-hidden="true">
+      <div class="fire-halo" aria-hidden="true"></div>
+      <div class="fire-moon" aria-hidden="true"></div>
+      <div class="fire-ground" aria-hidden="true"></div>
+      <div class="fire-copy">
+        <p class="eyebrow"><span class="status-dot"></span>THE FINAL STOP</p>
+        <p class="fire-overline">No more signals. Just the quiet.</p>
+        <h2 id="fire-title">jeeven is<br><span>sleeping.</span></h2>
+        <p class="fire-caption">Somewhere between the last ember and the first light.</p>
+        <span class="end-mark" aria-hidden="true">✳</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>MADE OF STARDUST &amp; QUESTIONABLE TIMING</span>
+      <span class="footer-index" id="footer-index">01 <span>/</span> 02</span>
+    </footer>
+    <p class="sr-only" id="announcement" aria-live="polite"></p>
+  </main>
+</body>
+</html>
